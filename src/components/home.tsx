@@ -3,6 +3,7 @@ import { PostsType } from "@/interface";
 import axios from "axios";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
+import Text from "./text/text";
 
 const Home = () => {
   const [posts, setPosts] = useState<PostsType[]>([])
@@ -33,6 +34,7 @@ const Home = () => {
             </div>
         ))
     )}
+    <Text title={'mazzami'}/>
     </>
   );
 };
